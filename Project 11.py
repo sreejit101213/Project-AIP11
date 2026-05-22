@@ -6,14 +6,13 @@ import re
 # ------------------------------
 # Load Image
 # ------------------------------
-image_path = "ai-churns-out-funnier.jpg"   # Change to your image filename
+image_path = "ai-churns-out-funnier.jpg"  
 original = cv2.imread(image_path)
 
 if original is None:
     print("Error: Could not load image.")
     exit()
 
-# Resize image for better viewing (optional)
 original = cv2.resize(original, (800, 600))
 
 # Working image
